@@ -10,6 +10,7 @@
 캐릭터가 생성된 계정에 대해서만 랭킹 기록이 보관됩니다.
 
 ### 추가 코드
+```
 <?
 $maze_count = sql_fetch("select count(*) as cnt from {$g5['maze_table']}");
 $maze_count = $maze_count['cnt'];
@@ -32,7 +33,7 @@ $ma_per = $ma_count == 0 ? 0 : $ma_count / $maze_count * 100;
 */
 ?>
 <p>미궁 - <?=$ma['ma_subject']?> 진행중</p>
-
+```
 
 copyright by.AvocadoEdition
 https://avocado-edition-rout.postype.com/
